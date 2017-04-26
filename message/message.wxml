@@ -1,0 +1,16 @@
+<view class="wrap">
+  <view class="loading__wrap" style="display: none;">  
+    <image src="/image/loading.png" class="loading__img" animation="{{animationData}}"/>
+  </view>
+  <view class="content">
+      <block wx:for="{{list}}">
+        <navigator url="{{item.url}}" class="list">
+          <view id="{{item.id}}" class="list__item {{item.last? 'noborder' : ''}}">
+              <image class="list__info-icon" src="{{item.src}}" background-size="cover" />
+              <view class="flex__status">{{item.name}}<view class="circle__warning">3</view></view>
+              <image class="arrow__icon" src="/image/arrowright.png" background-size="cover" />
+          </view>
+        </navigator>
+      </block>
+  </view>
+</view>

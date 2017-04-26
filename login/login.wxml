@@ -1,0 +1,20 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+<view class="wrap">
+    <view class="logo">
+        <image src="../../image/logo.png" class="logo__icon"/>
+    </view>
+    <view class="content">
+        <view class="input border__bottom">
+            <view class="item__name">账户</view><input placeholder="请输入账户名称" bindinput="listenerUserInput" />
+        </view>
+        <view class="input">        
+            <view class="item__name">密码</view><input placeholder="请输入登录密码" type="password" bindinput="listenerPasswordInput"/>
+        </view>
+    </view>
+    <button bindtap="btnLogin" class="btn__login">登录</button>
+   <view class="call" bindtap="callPhone">
+      <image class="phone" src="/image/phone.png"></image>
+      010-62559142
+  </view>   
+</view>

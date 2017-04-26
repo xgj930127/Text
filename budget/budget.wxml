@@ -1,0 +1,19 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+<view class="wrap">
+  <view class="content">
+    <view class="border__bottom flex" bindtap="btnSetBudget">
+      日预算 <text class="mark {{isSetBudget?'show':'hide'}}">￥</text> 
+      <view class="{{isSetBudget?'show':'hide'}} flex_status" >
+        <input bindinput="bindKeyInput" placeholder="请输入数值" focus="{{focus}}" type="number" value="{{value}}" />       
+      </view>
+      <icon class="{{isSetBudget?'show':'hide'}}" type="success_no_circle" size="20"/>    
+    </view>
+    <view class="flex" bindtap="btnNoSetBudget">
+      <view class="flex_status">不设定预算</view>        
+      <icon class="{{!isSetBudget?'show':'hide'}}" type="success_no_circle" size="20"/>    
+    </view>
+  </view>
+  <view class="tip blue {{downline == 1 ? 'hide' : 'show'}}">最近30天内，您的产品没有因为超出预算而下线。</view>
+  <button bindtap="btnSubmit" class="btn__submit">完成</button>
+</view>

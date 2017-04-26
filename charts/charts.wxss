@@ -1,0 +1,134 @@
+page{
+    background-color: #fff;
+}
+canvas {
+    width: 640rpx;
+    height: 600rpx;
+    margin:50rpx auto;
+}
+.widgets__item{
+    margin-bottom: 20rpx;
+    background-color: #ebf6fe;
+    overflow: hidden;
+    cursor: pointer;
+}
+.widgets__title{
+    display: flex;
+    font-size: 28rpx;
+    padding: 15rpx;
+
+}
+.title__item{
+    flex:1;
+    width: 1%;
+    padding: 10rpx;
+    text-align:center;
+}
+.widgets__info{
+    display: flex;
+    padding: 20rpx;
+    align-items: center;
+    flex-direction: row;
+}
+.widgets__info_show{
+}
+.widgets__info_show .widgets__info-img{
+    transform: rotate(-90deg);
+}
+.border__right{
+    border-right:2rpx solid #73c1f8;
+}
+.widgets__info-name{
+
+}
+.widgets__info_show{
+    color:#0c7fd1;
+}
+.widgets__info_show .widgets__info-img{
+    transform: rotate(-90deg);
+}
+.widgets__info-img{
+    width: 26rpx;
+    height: 26rpx;
+    transition: transform .4s;
+    transform: rotate(90deg);
+}
+
+.widgets__list{
+    display: none;
+}
+.widgets__list .list{
+    position:absolute;
+    overflow:auto;
+    top:80rpx;
+    left:0;
+    width:100%;
+    max-height:400rpx;
+    background-color:#ebf6fe;
+    border-top:1rpx solid #fff;
+}
+.widgets__list_show{
+    display: block;
+}
+.widget__name{
+    float:left;
+    box-sizing:border-box;
+    width: 33.33%;
+    padding: 15rpx;
+    height:70rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    text-align:center;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.btn__list{
+    padding:0 54rpx;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.change__chart{
+    width: 45%;
+    border-radius: 6rpx;
+    padding: 20rpx 0;
+    border:1px solid #0c7fd1;
+    color: #84cbfe;
+    font-size: 24rpx;
+    margin-bottom: 30rpx;
+    text-align: center;
+}
+.btn__num{
+    color: #108ee9;
+    font-size: 32rpx; 
+    margin-bottom:10rpx;
+    text-align: center;
+}
+.circle{
+    display: inline-block;
+    position: relative;
+    bottom: 4rpx;
+    width: 14rpx;
+    height: 14rpx;
+    border-radius: 7rpx;
+    background-color: #fdd705;
+    margin-right: 10rpx;
+}
+.active{
+    background-color:#0c7fd1;
+    color: #fff;
+}
+.active .btn__num{
+    color: #fff;
+}
+.show__chart{
+    width:750rpx;
+    height: 640rpx;
+    margin-bottom: 40rpx;
+}
+.title__selected{
+    color:#0c7fd1;
+}

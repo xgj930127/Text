@@ -1,0 +1,46 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+
+<view class="g-list ">
+	<view class="flex" wx:for="{{list1}}">
+		<view class="title">
+			{{item.title}}
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-width {{item.highlight ? 'red' : ''}}" placeholder="{{item.placeholder}}" value="{{item.value}}" disabled="{{item.disabled}}" bindchange="bindChange" data-index="{{index}}" data-id-name="{{item.id}}" /></view>
+	</view>
+</view>
+<view class="g-list ">
+	<view class="flex" >
+		<view class="title">
+			收件人
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-width" placeholder="姓名" value="{{list2[0].value}}" bindinput="bindChangeUser"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			联系电话
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-width" placeholder="手机号码" value="{{list2[1].value}}" bindinput="bindChangePhone"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			收件地址
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-width" placeholder="收件地址" value="{{list2[2].value}}" bindinput="bindChangeAddress"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			邮寄方式
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-width" placeholder="顺丰速递（免费）" value="顺丰速递（免费）" disabled/></view>
+	</view>
+<!-- 	<view class="flex" wx:for="{{list2}}">
+		<view class="title">
+			{{item.title}}
+		</view>
+		<input type="text" class="flex-grow {{item.highlight ? 'red' : ''}}" placeholder="{{item.placeholder}}" value="{{item.value}}" disabled="{{item.disabled}}" bindinput="bindChange" data-index="{{index}}" data-id-name="{{item.id}}" />
+	</view> -->
+</view>
+<button class="common-btn" hover-class="on" bindtap="commitInvoice">
+	提交
+</button>

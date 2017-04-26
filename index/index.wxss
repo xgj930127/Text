@@ -1,0 +1,98 @@
+/**index.wxss**/
+.wrap{
+    background-color: #f8f8f8;
+    padding-bottom: 100rpx;
+}
+.title{
+    font-size: 28rpx;
+    padding:60rpx 50rpx 0 50rpx;
+    background-color: #ebf6fe;
+}
+.target{
+    padding-bottom: 30rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex__status{
+    flex:1;
+    font-size: 36rpx;
+    margin-left: 55rpx;
+}
+button[size="mini"]{
+    padding:0;
+    width:125rpx;
+    height:60rpx;
+    color: #333;
+    border:1rpx solid #939597;
+}
+button[size="mini"].blue{
+    color: #3178ac;
+    border:1rpx solid #3178ac;
+}
+button[size="mini"].button__hover{
+    color: #3178ac;
+    border:1rpx solid #3178ac;
+}
+.flex{
+    font-size: 24rpx;
+    padding:30rpx;
+    color: #716f76;
+}
+.text__flex{
+    flex: 1;
+    font-size: 26rpx;
+}
+.arrow__icon {
+    width:30rpx;
+    height:30rpx;
+    background-size:cover;
+}
+.statistics{
+    font-size: 26rpx;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.statistics .item{
+    font-size:24rpx;
+    color:#666;
+    width: 25%;
+    height: 60rpx;
+    text-align: center;
+    padding:40rpx 0 55rpx 0;
+}
+.margin__bottom{
+    margin-bottom: 15rpx;
+    color:#333;
+    font-size:30rpx;
+}
+.coupon{
+    position:relative;
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: 600;
+    color:#0369b2;
+    margin:0 30rpx 10rpx;
+}
+.coupon__bg{
+    width: 700rpx;
+    height: 146rpx;
+}
+.coupon__recharge{
+    position: absolute;
+    top:55rpx;
+    left: 40rpx;
+}
+.coupon__get{
+    position: absolute;
+    top:41rpx;
+    left: 280rpx;
+    font-size: 52rpx;
+    color:#f43530;
+}
+.icon{
+    width:15rpx;
+    height:21rpx;
+}

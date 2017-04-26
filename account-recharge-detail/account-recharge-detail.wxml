@@ -1,0 +1,22 @@
+<!-- 通用模板 -->
+<import src="../template/accountRecord.wxml" /> 
+
+<view class="wrap">
+	<template is="accountRecord" data="{{recordTitle}}"></template>
+	<view class="pay-list-w">
+		<view  wx:for="{{rechargeList}}" class="flex pay-list">
+			<image class="{{item.way}}" src="{{item.imgSrc}}"></image>
+			<view class="text">
+				<view class="text-title">
+					{{item.payWay}}
+				</view>
+				<view class="text-time">
+					{{item.auditdate}}
+				</view>
+			</view>
+			<view class="money">
+				￥{{item.audit_money}}
+			</view>
+		</view>
+	</view>
+</view>

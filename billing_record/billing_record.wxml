@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="wrap">
+    <view class="content">
+        <view class="record_con">
+            <block wx:for="{{contentList}}">
+                <view class="record_list"> 
+                    <view class="title_box">
+                        <view class="title_box_l">{{a}}</view>
+                        <view class="title_box_r">{{item.name}}</view>
+                    </view>
+                    <block wx:for="{{recordList}}">
+                        <view class="record_box">
+                            <view class="record_l">{{item.title}}</view>
+                            <view class="record_r">{{item.content}}</view>
+                        </view>
+                    </block>
+                    <button class="see_detail button-hover">查看详情</button>
+                </view>
+            </block>    
+        </view> 
+    </view>
+   
+
+</view>

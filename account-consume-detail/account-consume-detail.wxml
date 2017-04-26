@@ -1,0 +1,39 @@
+<!-- 通用模板 -->
+<import src="../template/accountRecord.wxml" />  
+
+<view class="wrap">
+	<template is="accountRecord" data="{{recordTitle}}">
+
+	</template>
+	<view class="consume-list-w">
+		<view class="consume-list flex" wx:for="{{consumeList}}" >
+			<view class="desc">
+				<view class="">
+					{{item.consume}}元
+				</view>
+				<view class="title">
+					总消费
+				</view>
+			</view>
+			<view class="desc">
+				<view class="">
+					{{item.corpus_consume}}元
+				</view>
+				<view class="title">
+					现金消费
+				</view>
+			</view>
+			<view class="desc">
+				<view class="">
+					{{item.rebate_consume}}元
+				</view>
+				<view class="title">
+					优惠消费
+				</view>
+			</view>
+			<view class="date">
+				{{item.sdate}}
+			</view>
+		</view>
+	</view>
+</view>

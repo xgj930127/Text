@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="wrap">
+    <view class="content">
+        <view class="billing_con">
+            <block wx:for="{{billingList}}">
+                <view class="billing_list"> 
+                    <view class="billing_box">
+                        <view class="billing_l">{{item.title}}</view>
+                        <view class="billing_r">{{item.content}}</view>
+                    </view>
+                </view>
+            </block>    
+        </view> 
+    </view>
+   
+
+</view>

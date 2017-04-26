@@ -1,0 +1,9 @@
+.remind_list{margin:30rpx 30rpx 0;border-bottom: 2rpx solid #ccc;}
+.remind_box{height: 50rpx;}
+.ico_cur{float: left;width: 50rpx;height: 40rpx;}
+.ico_cur wx-image{width: 50rpx;height: 40rpx;}
+.remind_mes{float: left;padding-left: 20rpx;font-size: 34rpx;color: #000;font-weight: bold;line-height: 48rpx;}
+.ico_right{float: right;width: 30rpx;height:45rpx;}
+.ico_right wx-image{width: 30rpx;height:45rpx;}
+.money_low{margin: 30rpx 0;font-size: 26rpx;color: #a9a9a9;padding-left: 10rpx;}
+.time{font-size: 26rpx;color: #a9a9a9;margin-bottom: 30rpx;padding-left: 10rpx;}

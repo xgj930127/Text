@@ -1,0 +1,48 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+<view class="g-list ">
+	<view class="flex">
+		<view class="title">
+			{{list[0].title}}
+		</view>
+		<view class="flex-grow"><input type="number" class="flex-grow-input"  placeholder="请输入纳税人识别码" value="{{list[0].value}}" bindchange="bindChangeCode"/></view>
+	</view>
+	<view class="flex">
+		<view class="title">
+			{{list[1].title}}
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input"  placeholder="请输入税务地址" value="{{list[1].value}}" bindchange="bindChangeAddress"/></view>
+	</view>
+	<view class="flex">
+		<view class="title">
+			{{list[2].title}}
+		</view>
+		<view class="flex-grow"><input class="flex-grow-input" type="number" placeholder="请输入银行账号" value="{{list[2].value}}" bindchange="bindChangeAccount"/></view>
+	</view>
+	<view class="flex">
+		<view class="title">
+			{{list[3].title}}
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input" placeholder="请输入开户银行" value="{{list[3].value}}" bindchange="bindChangeBank"/></view>
+	</view>
+		<view class="flex">
+		<view class="title">
+			{{list[4].title}}
+		</view>
+		<view class="flex-grow"><input class="flex-grow-input" type="text" placeholder="请输入税务电话" value="{{list[4].value}}" bindchange="bindChangePhone"/></view>
+	</view>
+	
+	<!-- 点击上传 -->
+	<view class="flex upload" >
+		<view class="title flex-grow">
+			一般纳税人证明材料
+		</view>
+		<view class="uploadBtn">
+			<image class="" src="{{tempFilePaths}}" bindtap="btnUploadImg"></image>
+		</view>
+		
+	</view>
+</view>
+<button class="common-btn" hover-class="on" bindtap="navBack">
+	确认
+</button>

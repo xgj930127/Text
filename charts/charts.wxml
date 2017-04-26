@@ -1,0 +1,42 @@
+<view class="content">
+    <view class="widgets__item">
+        <view class="widgets__title">
+            <block wx:for-items="{{list}}">
+                <view class="title__item {{index == 0 ? 'border__right' : ''}} {{item.open ? 'widgets__info_show' : ''}}" id="{{item.id}}" bindtap="widgetsToggle">
+                    {{item.name}}
+                    <image class="widgets__info-img" src="/image/arrowright.png"/>
+                </view>         
+            </block>
+        </view>
+        <block wx:for-items="{{list}}">
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+            <view class="list">
+                <block wx:for-items="{{item.nav}}" wx:for-item="nav">
+                    <view class="widget__name {{nav.selected?'title__selected':''}}" data-id = "{{nav.id}}" bindtap="btnChooseItem">{{nav.value}}</view> 
+                </block>
+            </view>
+        </view>        
+        </block>
+    </view>
+    <image class="show__chart" src="{{chartSrc}}"/>
+    <view class="btn__list">
+        <view class="change__chart {{selected.inShowNum?'active':''}}" bindtap="btnGetItem" data-item="inShowNum">
+            <view class="btn__num"><view class="circle"></view>{{inShowNum}}</view>
+            展现
+        </view>
+        <view class="change__chart {{selected.hitNum?'active':''}}" bindtap="btnGetItem" data-item="hitNum">
+            <view class="btn__num"><view class="circle"></view>{{hitNum}}</view>
+            点击量
+        </view>
+        <view class="change__chart {{selected.scp?'active':''}}" bindtap="btnGetItem" data-item="scp">
+            <view class="btn__num"><view class="circle"></view>{{scp}}%</view>
+            点击率
+        </view>
+        <view class="change__chart {{selected.consume?'active':''}}" bindtap="btnGetItem" data-item="consume">
+            <view class="btn__num"><view class="circle"></view>{{consume}}</view>
+            消费
+        </view>
+    </view>
+    <view></view>
+</view>
+

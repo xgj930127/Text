@@ -1,0 +1,4 @@
+	<view class="box">
+		<image src="/image/more/no_apply.png"/>
+	</view>
+	<view class="cont">您尚未申请开发票。</view>

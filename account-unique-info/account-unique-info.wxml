@@ -1,0 +1,52 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+
+<view class="g-list ">
+	<view class="flex" wx:for="{{list1}}">
+		<view class="title">
+			{{item.title}}
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input {{item.highlight ? 'red' : ''}}" placeholder="{{item.placeholder}}" value="{{item.value}}" disabled /></view>
+	</view>
+</view>
+<view class="g-list ">
+	<view class="flex" >
+		<view class="title">
+			收件人
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input" placeholder="姓名" value="{{list2[0].value}}" bindinput="bindChangeUser"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			联系电话
+		</view>
+		<view class="flex-grow"><input type="number" class="flex-grow-input" placeholder="手机号码" value="{{list2[1].value}}" bindinput="bindChangePhone"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			收件地址
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input" placeholder="收件地址" value="{{list2[2].value}}" bindinput="bindChangeAddress"/></view>
+	</view>
+	<view class="flex" >
+		<view class="title">
+			邮寄方式
+		</view>
+		<view class="flex-grow"><input type="text" class="flex-grow-input" placeholder="顺丰速递（免费）" value="顺丰速递（免费）" disabled/></view>
+	</view>
+</view>
+<!-- 跳转到专用发票信息 -->
+<navigator class="g-list " url="/pages/account-unique-info-more/account-unique-info-more">
+	<view class="flex" wx:for="{{list3}}">
+		<view class="title flex-grow">
+			增值税专用发票信息
+		</view>
+<!-- 		<input type="text" class=" {{item.highlight ? 'red' : ''}} goto-complete" placeholder="{{completeStatus}} >" value="" disabled="true"  /> -->
+		<view class="complete">
+			{{completeStatus}} >
+		</view>
+	</view>
+</navigator>
+<button class="common-btn" hover-class="on" bindtap="commitInvoice">
+	提交
+</button>

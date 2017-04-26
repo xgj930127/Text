@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="wrap">
+    <view class="title">
+        <view class="target">
+            账户余额<view class="flex__status red">￥{{balance}}</view>
+            <button size="mini" bindtap="btnRecharge" class="btn blue" hover-class="button__hover">充值</button>
+        </view>
+        <view class="target">
+            每日预算<view class="flex__status red">￥{{quota}}</view>
+            <button size="mini" bindtap="btnBudget" class="btn" hover-class="button__hover">预算</button>
+        </view>
+    </view>
+    <view class="flex" bindtap="btnMore">
+        <text class="text__flex">推广统计</text>更多
+        <image class="arrow__icon" src="/image/arrowright.png"/>
+
+    </view>
+    <view class="statistics">
+        <block wx:for="{{statistics}}">
+        <view class="item"><view class="margin__bottom">{{item.num}}</view><view>{{item.title}}</view></view>
+        </block>
+    </view>
+    <view class="flex text__flex">{{ad.title}}</view>
+    <view class="coupon" wx:for="{{ad.list}}" bindtap="btnAd">
+        <image src="/image/quan.png" class="coupon__bg"/>
+        <view class="coupon__recharge">充{{item.a}}即送</view>
+        <view class="coupon__get"><image src="/image/money.png" class="icon"/>{{item.b}}</view>
+    </view>
+</view>

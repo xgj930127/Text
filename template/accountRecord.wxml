@@ -1,0 +1,15 @@
+<template name="accountRecord">
+    <view class="g-detail flex">
+        <view class="text flex-grow">
+            <view class="date">
+                {{recordTitle.year}}年{{recordTitle.month}}月
+            </view>
+            <view class="">
+                {{recordTitle.name}}    ￥{{(recordTitle.amount)}}
+            </view>
+        </view>
+        <picker mode="date" fields="month" value="{{recordTitle.year}}-{{recordTitle.month}}"  bindchange="bindDateChange">
+            <image class="dateImg" src="/image/sqf/icon-calendar.png"></image>
+        </picker>
+    </view>
+</template>

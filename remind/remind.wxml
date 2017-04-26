@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="wrap">
+    <view class="content">
+        <block wx:for="{{remindList}}">
+            <view class="remind_list" >
+                <view class="remind_box">
+                    <view class="ico_cur">
+                      <image src="/image/more/ico_add1.png" background-size="cover"/>
+                    </view>
+                    <view class="remind_mes">{{a}}</view>
+                    <navigator class="ico_right" url="../billing/billing">
+                      <image src="/image/more/ico_add2.png" background-size="cover"/>
+                    </navigator>
+                </view>
+                <view class="money_low">{{money_low}}</view>
+                <view class="time">{{item.time}}</view>
+            </view>
+        </block>    
+    </view>
+   
+
+</view>

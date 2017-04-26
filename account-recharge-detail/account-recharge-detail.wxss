@@ -1,0 +1,40 @@
+button.common-btn {
+	margin-top: 33rpx;
+}
+.g-list .complete {
+	font-size: 30rpx;
+	text-align: right;
+	color: #666666;
+}
+.pay-list {
+	height: 150rpx;
+	border-bottom: 1rpx solid #eeeeee;
+}
+.pay-list:nth-last-of-type(1) {
+	border-bottom: none;
+}
+.pay-list image{
+	width: 83rpx;
+	height: 83rpx;
+}
+.pay-list .text {
+	padding-left: 25rpx;
+	width: 380rpx;
+	font-size: 30rpx;
+}
+.pay-list .text .text-time {
+	color: #d6d6d6;
+	font-size: 26rpx;
+	margin-top: 15rpx;
+}
+.pay-list .money {
+	font-size: 63rpx;
+}
+.pay-list-w {
+	margin-top:162rpx;
+	padding-right:30rpx;
+	margin-left: 30rpx;
+}
+.wrap {
+	background: #fff;
+}

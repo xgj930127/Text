@@ -1,0 +1,26 @@
+<view class="wrap">
+    <view class="content {{!isNullShow?'show':'hide'}}" >
+        <block wx:for="{{remindList}}">
+            <view class="remind_list" >
+                <view class="remind_box" data-id="{{item.id}}">
+                    <view class="ico_cur {{conbot.icoshow}}"></view>
+                    <view class="remind_mes">{{item.title}}</view>
+                    <view class="ico_right" >
+                      <image src="/image/arrowright.png" background-size="cover"/>
+                    </view>
+                </view>
+                <view class="money_low">{{item.content}}</view>
+                <view class="time">{{item.createtime}}</view>
+            </view>
+        </block>    
+    </view>
+
+    <view class="no_mes_box {{isNullShow?'show':'hide'}}">   
+        <view class="box">
+            <image src="/image/more/no_message.png"/>
+        </view>
+        <view class="cont">您暂时没有收到消息。</view>
+    </view>   
+   
+
+</view>

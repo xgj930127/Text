@@ -1,0 +1,56 @@
+<view class="index">
+    <view class="body">
+        <view class="loading__wrap">  
+          <image src="/image/loading.png" class="loading__img" animation="{{animationData}}"/>
+        </view>
+        <view class="page__bd">
+          <icon type="success" size="40" class="resulticon"/>
+          <view class="section">
+              <view class="section__title">flex-direction: row</view>
+              <view class="flex-wrp" style="flex-direction:row;">
+                  <view class="flex-item bc_green">1</view>
+                  <view class="flex-item bc_red">2</view>
+                  <view class="flex-item bc_blue">3</view>
+              </view>
+          </view>
+          <view class="section">
+            <view class="section__title">使用float布局</view>
+            <view class="float-wrp">
+                <view class="float-item bc_green">
+                <view>shangyihang</view>
+                xiayihang
+                </view>
+                <view class="float-item bc_red">2</view>
+                <view class="float-item bc_blue">3</view>
+            </view>
+          </view>
+        </view>
+        <view class="widgets">
+            <block wx:for="{{list1}}">
+              <navigator url="{{item.url}}" class="widget">
+                <view class="widgets__item">
+                    <view id="{{item.id}}" class="widgets__info  {{item.last? 'noborder' : ''}}">
+                        <image class="widgets__info-icon" src="{{item.src}}" background-size="cover" />
+                        <view class="flex__status">{{item.name}}<view class="date">{{item.date}}</view></view>
+                        <image class="widgets__info-img" src="/image/arrowright.png" background-size="cover" />
+                    </view>
+                </view>
+              </navigator>
+            </block>
+        </view>
+        <view class="widgets">
+            <block wx:for="{{list2}}">
+              <navigator url="{{item.url}}" class="widget">
+                <view class="widgets__item  {{index? 'noborder' : ''}}">
+                    <view id="{{item.id}}" class="widgets__info">
+                        <image class="widgets__info-icon" src="{{item.src}}" background-size="cover" />
+                        <text class="flex__status">{{item.name}}</text>
+                        <image class="widgets__info-img" src="/image/arrowright.png" background-size="cover" />
+                    </view>
+                </view>
+              </navigator>
+            </block>
+        </view>
+        <button type="default" class="btn__logout">退出登录</button>
+    </view>
+</view>

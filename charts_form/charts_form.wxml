@@ -1,0 +1,19 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+<view class="nav_box">
+    <picker class="nav_l">最近30天</picker>
+    <picker class="nav_r">分类</picker>
+</view>
+<view class="charts_box">
+    <view wx:for="{{chartsList}}" class="chartsList">{{item.title}}</view>
+</view>
+<view class="chart_container">
+  <canvas canvas-id="myCanvas"/>
+</view>
+<view class="det_box">
+    <view class="detCon" wx:for="{{detList}}">
+        <view class="num">{{item.num}}</view>
+        <view class="title">{{item.name}}</view>
+    </view>
+</view>
+

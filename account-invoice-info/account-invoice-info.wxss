@@ -1,0 +1,15 @@
+button.common-btn {
+	margin-top: 33rpx;
+}
+.g-list .complete {
+	font-size: 30rpx;
+	text-align: right;
+	color: #666666;
+}
+.flex-grow{
+    overflow:hidden;
+}
+.flex-grow-width{
+    float:right;
+    width:480rpx;
+}

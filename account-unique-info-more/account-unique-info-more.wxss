@@ -1,0 +1,19 @@
+button.common-btn {
+  margin-top: 25rpx;
+}
+.upload {
+	height: 187rpx;
+}
+
+.upload  image {
+	width: 116rpx;
+	height: 116rpx;
+	display: block;
+}
+.flex-grow{
+    overflow:hidden;   
+}
+.flex-grow-input{
+    width:380rpx;
+    float:right;
+}

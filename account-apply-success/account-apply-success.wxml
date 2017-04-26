@@ -1,0 +1,8 @@
+<view class=" wrap">
+	<image class="" src="/image/sqf/icon-hook.png"></image>
+	<view class="tac text">发票申请成功</view>
+	<!-- 去到开票记录页面 -->
+	<button class="btn" hover-class="on" bindtap="gotoInvoice">
+		我知道了
+	</button>
+</view>

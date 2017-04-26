@@ -1,0 +1,25 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" /> 
+
+	<view class="g-list ">
+		<view class="flex" wx:for="{{list}}">
+			<view class="title">
+				{{item.title}}
+			</view>
+			<view class="flex-grow"><input type="text" class="flex-grow-input {{item.highlight ? 'red' : ''}}" placeholder="{{item.placeholder}}" value="{{item.value}}" disabled="{{item.disabled}}" />
+			</view>
+		</view>
+		<view class="flex">
+			<view class="title">
+				发票类型
+			</view>
+			<picker bindchange="bindPickerChange" class="flex-grow" value="{{invoiceIndex}}" range="{{invoice}}">
+				<view class="picker">
+					{{invoice[invoiceIndex]}} <image class="" src="/image/arrowright.png" style="width:28rpx;height:24rpx;"></image>
+				</view>
+			</picker>
+		</view>
+	</view>
+<button class="common-btn" hover-class="on" bindtap="gotoApply">
+	申请发票
+</button>

@@ -1,0 +1,21 @@
+button.common-btn {
+	margin-top: 33rpx;
+}
+.g-list .complete {
+	font-size: 30rpx;
+	text-align: right;
+	color: #666666;
+}
+.goto-complete {
+	width: 180rpx;
+}
+.flex-grow{
+    overflow:hidden;   
+}
+.flex-grow-input{
+    width:480rpx;
+    float:right;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,29 @@
+<view class="wrap">
+    <view class="content {{!nullShow?'show':'hide'}}">
+            <block wx:for="{{invoiceList}}">
+                <view class="record_list"> 
+                    <view class="title_box">
+                        <view class="title_box_l">{{item.num}}</view>
+                        <view class="title_box_r">{{item.status}}</view>
+                    </view>
+                    <view class="list_content">
+                    <block wx:for="{{item.content}}">
+                        <view class="record_box">
+                            <view class="record_l">{{item.name}}</view>
+                            <view class="record_r">{{item.value}}</view>
+                        </view>
+                    </block>
+                    </view>
+                    <button class="see_detail button-hover" bindtap="btnDetail" data-id="{{item.id}}">查看详情</button>
+                </view>
+            </block>    
+    </view>
+   
+    <view class="no_mes_box {{nullShow?'show':'hide'}}">   
+        <view class="box">
+            <image src="/image/more/no_apply.png"/>
+        </view>
+        <view class="cont">您尚未申请开发票。</view>
+    </view>     
+
+</view>

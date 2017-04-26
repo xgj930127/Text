@@ -1,0 +1,57 @@
+<view class="tac account bgBlue">
+  <view class="text1">
+    账户余额
+  </view>
+  <view class="text2">
+    {{accountRemain}}
+  </view>
+  <view class="btns flex">
+    <button hover-class="on" class="static" plain="true" bindtap="recharge">充值</button>
+    <button hover-class="on"  plain="true" bindtap="applyInvoice">开发票</button>
+  </view>
+  <view class="water">
+    <image class="" src="/image/sqf/bg001.png"/>
+  </view>
+  <view class="money-info">
+    <block class="" wx:for="{{money}}">
+      <view class="">
+        <view class="num"> ￥{{item.num}}</view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="nav-list">
+  <block class="" wx:for="{{nav}}">
+    <navigator class="flex" url="{{item.link}}" open-type="navigate">
+      <image class="icon00{{index+1}} icon-left" src="{{item.imgUrl}}"></image>
+      <text class="flex-grow">{{item.text}}</text>
+      <image class="icon-arrow" src="/image/arrowright.png"></image>
+    </navigator>
+  </block>
+<!--   <view class="flex info">
+    <image class="icon004 icon-left" src="/image/sqf/icon004.png"></image>
+    <text class="flex-grow">清除缓存</text>
+    <switch bindchange="clearStorage"/>
+  </view> -->
+  <!-- <view class="flex info">
+      <image class="icon004 icon-left" src="/image/sqf/icon004.png"></image>
+      <text class="flex-grow">消息设置</text>
+      <switch checked bindchange="getMessage"/>
+  </view> -->
+  <view class="flex info" bindtap="callPhone">
+      <image class="icon005 icon-left" src="/image/sqf/icon005.png"></image>
+      <text class="flex-grow">客服电话</text>
+      <image class="icon-arrow" src="/image/arrowright.png"></image>
+  </view>
+</view>
+<view class="exit-login-w">
+  <view class="wx__kefu">  
+      <contact-button type="default-light" size="23" session-from="weapp"></contact-button>
+      <view class="wx__kefu__text">客服</view>
+  </view>
+  <view class="exit-login"  bindtap="logout">
+    退出登录
+  </view>
+</view>

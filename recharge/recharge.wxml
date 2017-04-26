@@ -1,0 +1,30 @@
+<import src="../template/showToast.wxml" />  
+<template is="showToast" data="{{showToast: showToast}}" />  
+<view class="wrap">
+    <view class="title">
+        <view class="user">
+            <view class="user__info">
+                <view class="username">{{uname}}</view>
+                <view class="user__icon"><image src="/image/userimg.png"/></view>
+            </view>       
+            <view class="num">账户余额 {{user.balance}}元</view>
+        </view>
+    </view>
+    <view class="content">
+        <block  wx:for="{{rechargeList}}">
+        <view class="recharge__list {{selected[index]?'active':''}}"bindtap="btnGetValue" data-value="{{item.num}}" data-index="{{index}}">
+            <view class="recharge__num">{{item.num}}元</view>
+            赠送{{item.get}}元
+        </view>
+        </block>
+        <view class="recharge__list other">
+            <input type="number" placeholder="其他数值" class="other__value" bindinput="inputMoney" value="{{inputValue}}" />
+        </view>
+    </view>
+    <view class="tip">
+        <switch checked bindchange="switchChange" type="checkbox"/>
+        已经阅读并同意<navigator class="blue" url="../user-agrement/user-agrement">《订单直通车产品用户服务协议》</navigator>
+    </view>
+    <button bindtap="btnRecharge" class="btn__recharge">立即充值</button>
+    <view class="warning">说明：如果您需要网银支付或者支付宝支付，请登录网页版充值。</view>
+</view>

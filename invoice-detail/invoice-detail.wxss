@@ -1,0 +1,5 @@
+.billing_list{}
+.billing_box{padding: 0 30rpx;font-size: 30rpx;color: #2c2c2c;line-height: 54rpx;overflow: hidden;}
+.billing_l{float: left;width: 210rpx;}
+.billing_r{float: right;width: 320rpx;text-align: right;color:#666;}
+.billing_con{padding:10rpx 0;border-top: 1rpx solid #ccc;border-bottom: 2rpx solid #ccc;margin: 20rpx 0;}

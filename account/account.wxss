@@ -1,0 +1,181 @@
+/*重置*/
+.tac {
+  text-align: center !important;
+}
+.cw {
+  color: white !important;
+}
+.cb {
+  color: black !important;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+/*页面通用*/
+page {
+  background: #f8f8f8;
+}
+.bgBlue {
+  background: #0c7fd1;
+}
+.wordBlue {
+  color: #0c7fd1;
+}
+
+
+/*左右保留 30rpx*/
+.account {
+  color: #fff;
+  font-size: 26rpx;
+}
+.text1 {
+  line-height: 75rpx;
+  color: #cadef8;
+}
+.text2 {
+  font-size: 72rpx;
+  /*line-height: 72rpx;*/
+}
+.account .btns {
+  padding: 0 90rpx;
+  justify-content: space-between;
+}
+.account button {
+  color: inherit;
+  font-size: inherit;
+  width: 248rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  border: 1rpx solid #d7e9f7;
+  border-radius: 10rpx;
+  margin: 40rpx 0 13rpx;
+}
+.account button.on {
+  border: 1rpx solid #fff;
+  background: #fff;
+  color: #0c7fd1;
+}
+.account button.static {
+  border: 1rpx solid #fff;
+  background: #fff;
+  color: #0c7fd1;
+}
+.water {
+  height: 76rpx;
+  background: #fff;
+}
+.water image {
+  width: 100%;
+  height: 100%;
+}
+.money-info {
+  background: #fff;
+  height: 136rpx;
+  /*颜色条*/
+  border-bottom: 1rpx solid #d9d9d9;
+  display: flex;
+  align-items: center;
+}
+.money-info>view {
+  border-right: 1rpx solid #bbdbf2;
+  flex: 1;
+}
+.money-info>view:nth-last-of-type(1) {
+  border-right: none;
+}
+.money-info .num{
+  font-size: 36rpx;
+  color: #0c7fd1;
+  line-height: 55rpx;
+}
+.money-info .text{
+  color: #666666;
+  line-height: 50rpx;
+}
+.nav-list {
+  font-size: 32rpx;
+  color: #2c2c2c;
+}
+.nav-list navigator {
+  background: #fff;
+  height: 90rpx;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+.icon-left {
+  padding: 0 17rpx;
+}
+.nav-list image.icon001 {
+  width: 44rpx;
+  height: 32rpx;
+}
+.nav-list image.icon002 {
+  width: 40rpx;
+  height: 32rpx;
+}
+.nav-list image.icon003 {
+  width: 38rpx;
+  height: 39rpx;
+}
+.nav-list image.icon004 {
+  width: 38rpx;
+  height: 36rpx;
+}
+.nav-list image.icon005 {
+  width: 40rpx;
+  height: 39rpx;
+}
+.nav-list image.icon006 {
+  width: 39rpx;
+  height: 39rpx;
+}
+.info{
+  background:#fff;
+  height:90rpx;
+  padding-left:30rpx;
+  border-bottom:1rpx solid #d9d9d9;
+}
+.icon-arrow {
+  width: 34rpx;
+  height: 34rpx;
+  padding-right: 26rpx;
+}
+.exit-login-w {
+  position: relative;
+}
+.exit-login {
+  font-size:36rpx;
+  color:#2c2c2c;
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+  background:#fff;
+  border-bottom:1rpx solid #d9d9d9;
+  border-top:1rpx solid #d9d9d9;
+  /*margin:60rpx 0 0 0;*/
+  margin:40rpx 0 0 0;
+}
+.wx__kefu{
+  position: absolute;
+  top:-8rpx;
+  right: 15rpx;
+  box-sizing: border-box;
+  padding: 15rpx;
+  bottom:74rpx;
+  right:40rpx; 
+  width: 98rpx;
+  height: 98rpx;
+  background-color: #00b25e;
+  border-radius: 49rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+.wx__kefu__text{
+  margin-top: -10rpx;
+}
+@media screen and (max-width: 350rpx) {
+  .exit-login {
+    margin:10rpx 0 0 0;
+  }
+}

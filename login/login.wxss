@@ -1,0 +1,52 @@
+.logo{
+    display:flex;
+    justify-content: center; 
+    margin:100rpx 0;   
+}
+.logo__icon{
+    width:600rpx;
+    height:230rpx;
+    background-size: cover;
+}
+.content{
+    font-size: 32rpx;
+    color: #2c2c2c;
+    border-top: 1rpx solid #d9d9d9;
+    border-bottom: 1rpx solid #d9d9d9;
+    padding:0 30rpx;
+}
+.input{
+    display:flex;
+    align-items: center;
+    padding:20rpx 20rpx;
+    flex:1;
+}
+.input.border__bottom{
+    border-bottom: 1rpx solid #d9d9d9;
+}
+input{
+    padding-left: 50rpx;
+    width: 500rpx;
+}
+.btn__login{
+    margin:75rpx 30rpx;
+    background-color: #0c7fd1;
+    color: #fff;
+}
+.item__name{
+    width:80rpx;
+}
+.phone{
+    vertical-align:middle;
+    width:23rpx;
+    height:23rpx;
+    background-size:cover;
+}
+.call{
+    position: fixed;
+    bottom:20rpx;
+    color:#666;
+    text-align:center;
+    font-size:24rpx;
+    width: 100%;
+}

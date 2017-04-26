@@ -1,0 +1,9 @@
+.record_list{overflow: hidden;}
+.title_box{overflow: hidden;font-size: 30rpx;color: #1b82d2;border-top: 2rpx solid #666;line-height: 60rpx;font-weight: bold;padding: 20rpx 30rpx 0;}
+.title_box_l{float: left;width: 210rpx;}
+.title_box_r{float: right;width: 320rpx;text-align: right;}
+.record_box{overflow: hidden;padding: 0 30rpx;font-size: 30rpx;color: #2c2c2c;font-weight: bold;line-height: 60rpx;}
+.record_l{float: left;width: 210rpx;}
+.record_r{float: right;width: 320rpx;text-align: right;}
+.record_con{border-bottom: 2rpx solid #666;margin: 20rpx 0;padding-bottom: 20rpx;}
+.see_detail{width: 170rpx;height: 46rpx;float: right;margin: 10rpx 30rpx 30rpx 0;background: #fff;border:2rpx solid #666; line-height: 46rpx;font-size: 24rpx;}

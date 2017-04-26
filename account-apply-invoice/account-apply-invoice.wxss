@@ -1,0 +1,16 @@
+button.common-btn {
+  margin-top: 50rpx;
+}
+.g-list picker {
+	  font-size: 30rpx;
+  text-align: right;
+  color: #666666;
+}
+.flex-grow{
+    overflow:hidden;   
+}
+.flex-grow-input{
+    width:380rpx;
+    float:right;
+}
+
